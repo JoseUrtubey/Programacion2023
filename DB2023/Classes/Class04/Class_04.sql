@@ -1,3 +1,4 @@
+use sakiladb
 -- 1.   Show title and special_features of films that are PG-13
 
         SELECT title, special features FROM film 
@@ -53,5 +54,4 @@
         INNER JOIN store AS store_manager ON store.manager_staff_id = store_manager.staff_id
         INNER JOIN staff ON store_manager.manager_staff_id = staff.staff_id
         WHERE store.store_id = 2;
-
 
